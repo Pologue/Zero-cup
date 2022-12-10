@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <title>小游戏</title>
+    <script src="game.js"></script>
+</head>
+<body onkeydown="keyDown(event)" onkeyup="keyUp(event)">
+    <!--播放音乐-->
+    <audio autoplay="autoplay" controls="controls" preload="auto" src="src/music/audio.mp4" onclick="generateNotes()"></audio><br>
+
+    <!--返回按钮-->
+    <a href="introduction.html"><button type="button">回到介绍界面</button></a>
+
+    <div class="container">
+        <!--垂直分界线-->
+        <div class="divide-line">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <!--音符-->
+        <div class="notebox"></div>
+
+        <!--水平判定线-->
+        <div id="horizon"></div>
+
+        <!--底部按钮-->
+        <div class="bottom-button">
+            <img class="button" id="d" src="src/img/key1.png" alt="Key1">
+            <img class="button" id="f" src="src/img/key2.png" alt="Key2">
+            <img class="button" id="j" src="src/img/key2.png" alt="Key2">
+            <img class="button" id="k" src="src/img/key1.png" alt="Key1">
+        </div>
+    </div>
+</body>
+</html>
